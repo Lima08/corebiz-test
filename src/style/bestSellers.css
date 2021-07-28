@@ -1,3 +1,36 @@
-.section-BestSellers {
-  background-color: tomato;
+.list-BestSellers {
+  display: flex;
+  /* position: absolute;
+  width: 1248px;
+  height: 407px;
+  left: 336px;
+  top: 536px; */
+  /* width: 60%vh; */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.infos-item {
+  background-color: #E6E8EA;
+}
+
+.item-BestSellers {
+  margin: 15px;
+  display:inline-block;
+  width: 216px;
+  height: auto;
+  align-content:flex-end;
+}
+
+.product-name {
+  /* position: absolute; */
+ 
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #7A7A7A;
 }
