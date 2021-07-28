@@ -20,17 +20,20 @@
   display:inline-block;
   width: 216px;
   height: auto;
-  align-content:flex-end;
+  text-align: center;
+
 }
 
 .product-name {
   /* position: absolute; */
- 
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
   color: #7A7A7A;
+}
+
+.Title-bestSellers {
+  margin-left: 25%;;
 }

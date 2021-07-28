@@ -1,14 +1,14 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import UserContext from '../context/UserContext';
 import '../style/bestSellers.css';
 
   function BestSellers() {
     // const [indexLimit, setIndexLimit] = useState(3);
     const [indexToNotRender, setIndexToNotRender] = useState(4);
-    const [onMouse, SetOnMouse] = useState(false);
+    const [onMouse, SetOnMouse] = useState(true);
     const { productsApi, setProductsCart } = useContext(UserContext);
     // para as avaliaçõe em estrelas fazer um icone e renderiza-lo de acorod com a quantidade. Google foonts ou bootstrap
-
+    
     function handleRenderBestSellers(operation) {
       if (operation === '>') {
         (indexToNotRender === 4) ? setIndexToNotRender(0) : setIndexToNotRender(indexToNotRender + 1);
@@ -36,6 +36,7 @@ import '../style/bestSellers.css';
             { onMouse ? (<input
               type="button"
               value="Comprar"
+              className="btn-sucess"
               onClick={ () => setProductsCart(product) }
             />) : null }
           </div>
@@ -60,7 +61,7 @@ import '../style/bestSellers.css';
   return (
     <section className="section-BestSellers">
       <hr/>
-      <h3>Mais vendidos</h3>
+      <h3 className="Title-bestSellers">Mais vendidos</h3>
       {cardItemCreator(productsApi)}
       <hr/>
       </section>

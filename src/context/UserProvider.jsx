@@ -16,6 +16,9 @@ function UserProvider({ children }) {
     setProductsContext();
   }, []);
 
+  // useEffect(() => {
+  //   return localStorage.setItem('userCart', JSON.stringify(userCart));
+  // }, [totalProductsCart]);
   // function atualizeTotalProducts() {
   //   setTotalProductsCart(userCart.reduce(((acc, { quantity }) => acc + quantity), 0));
   // } APAGAR?
@@ -28,21 +31,22 @@ function UserProvider({ children }) {
   // Essa função atualiza o carrinho de compras
   function setProductsCart(newProduct) {
     if (userCart.length === 0) {
-      console.log('Rodou length');
       const newCart = {...newProduct, quantity: 1}
       handlePurchaseUserCart([newCart]);
+      localStorage.setItem('userCart', JSON.stringify(newCart))
       return;
     }
     if (userCart.some(({ productId }) => productId === newProduct.productId)) {
-      console.log('Rodou some');
       const newCart = userCart.map((products) => (
         products.productId === newProduct.productId ? {...products, quantity: Number(products.quantity) + 1} : products
       ));
       handlePurchaseUserCart(newCart);
+      localStorage.setItem('userCart', JSON.stringify(newCart))
       return;
     }
-    console.log('Rodou fora do if');
     handlePurchaseUserCart([...userCart, {...newProduct, quantity: 1}]);
+    localStorage.setItem('userCart', JSON.stringify([...userCart, {...newProduct, quantity: 1}]))
+
 
     // const {productName, imageUrl, stars, price, productId} = newProduct;
     // Montar um novo objeto produtos com quantity
