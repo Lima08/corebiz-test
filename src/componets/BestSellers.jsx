@@ -5,6 +5,7 @@ import '../style/bestSellers.css';
   function BestSellers() {
     // const [indexLimit, setIndexLimit] = useState(3);
     const [indexToNotRender, setIndexToNotRender] = useState(4);
+    const [onMouse, SetOnMouse] = useState(false);
     const { productsApi, setProductsCart } = useContext(UserContext);
     // para as avaliaçõe em estrelas fazer um icone e renderiza-lo de acorod com a quantidade. Google foonts ou bootstrap
 
@@ -23,18 +24,20 @@ import '../style/bestSellers.css';
         (index === indexToNotRender) ? null : ( <div
           className="item-BestSellers container-fluid"
           key={product.productId}
+          onMouseEnter={() => SetOnMouse(true)}
+          onMouseLeave={() => SetOnMouse(false)}
         >
           <img alt={`foto ${product.productName}`} src={product.imageUrl} />
-          <div className="infos-item">
+          <div className={onMouse ? 'infos-item' : null}>
             <p className="product-name">{product.productName}</p>
             <p>{`${product.stars} estrelas`}</p>
             <p>{`Valor: R$${Number(product.price)}`}</p>
             <p>Valor parcelado - fazer calculo simulado</p>
-            <input
+            { onMouse ? (<input
               type="button"
               value="Comprar"
               onClick={ () => setProductsCart(product) }
-            />
+            />) : null }
           </div>
         </div>)
       ))
