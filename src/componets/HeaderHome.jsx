@@ -16,6 +16,7 @@ function HeaderHome() {
         // onClick={}
       />
       <span> qtd carrinho{totalProductsCart}</span>
+      <hr/>
     </header>
 
   );

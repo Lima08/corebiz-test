@@ -28,6 +28,7 @@ import UserContext from '../context/UserContext';
       <hr/>
       <h3>Mais vendidos</h3>
       {cardItemCreator(productsApi)}
+      <hr/>
       </section>
   );
 }

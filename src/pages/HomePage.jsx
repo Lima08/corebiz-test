@@ -3,6 +3,7 @@ import HeroHomePage from '../componets/HeroHomePage';
 import BestSellers from '../componets/BestSellers';
 import UserProvider from '../context/UserProvider';
 import HeaderHome from '../componets/HeaderHome';
+import Footer from '../componets/Footer';
 
 function HomePage() {
   // Criar função para header
@@ -13,6 +14,7 @@ function HomePage() {
       <HeaderHome/>
       <HeroHomePage/>
       <BestSellers/>
+      <Footer/>
     </UserProvider>
 
   );
