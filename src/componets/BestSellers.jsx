@@ -2,21 +2,21 @@ import React, { useContext } from 'react';
 import UserContext from '../context/UserContext';
 
   function BestSellers() {
-    const { productsApi } = useContext(UserContext);
+    const { productsApi, setProductsCart } = useContext(UserContext);
     function cardItemCreator(productsApi) {
       return (
-        productsApi.map(({productName, imageUrl, stars, price, productId}) => (
-          <div key={productId}>
-            <img alt={`foto ${productName}`} src={imageUrl} />
+        productsApi.map((product) => (
+          <div key={product.productId}>
+            <img alt={`foto ${product.productName}`} src={product.imageUrl} />
             <div>
-              <p>{productName}</p>
-              <p>{`${stars} estrelas`}</p>
-              <p>{`Valor: R$${price}`}</p>
+              <p>{product.productName}</p>
+              <p>{`${product.stars} estrelas`}</p>
+              <p>{`Valor: R$${Number(product.price)}`}</p>
               <p>Valor parcelado - fazer calculo simulado</p>
               <input
                 type="button"
                 value="Comprar"
-                // onClick={ }
+                onClick={ () => setProductsCart(product) }
               />
             </div>
           </div>
