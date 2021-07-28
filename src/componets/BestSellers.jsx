@@ -3,29 +3,28 @@ import UserContext from '../context/UserContext';
 
   function BestSellers() {
     const { productsApi } = useContext(UserContext);
-  function cardItem() {
-    // Fazer um map aqqui com o retorno da API
-    console.log(productsApi)
-    return (
-      <div>
-        <img alt="Foto do produto" src="Colocar retorno da API" />
-        <div>
-          <p>Colocar nome vindo da API</p>
-          <p>colocar avaliação se tiver na api</p>
-          <p>Valor</p>
-          <p>Valor parcelado</p>
-          <input type="button" value="Comprar"/>
-        </div>
-      </div>
-    )
-  }
+    function cardItemCreator(productsApi) {
+      return (
+        productsApi.map(({productName, imageUrl, stars, price, productId}) => (
+          <div key={productId}>
+            <img alt={`foto ${productName}`} src={imageUrl} />
+            <div>
+              <p>{productName}</p>
+              <p>{`${stars} estrelas`}</p>
+              <p>{`Valor: R$${price}`}</p>
+              <p>Valor parcelado - fazer calculo simulado</p>
+              <input type="button" value="Comprar"/>
+            </div>
+          </div>
+        )) 
+      )
+    }
   return (
-    <>
+    <section>
       <hr/>
       <h3>Mais vendidos</h3>
-      <img alt="Foto iteis da API" />
-      {cardItem()}
-    </>
+      {cardItemCreator(productsApi)}
+      </section>
   );
 }
 
