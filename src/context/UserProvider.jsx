@@ -20,7 +20,9 @@ function UserProvider({ children }) {
   //   setTotalProductsCart(userCart.reduce(((acc, { quantity }) => acc + quantity), 0));
   // } APAGAR?
 
-  // userEffect(() => setTotalProductsCart(userCart.reduce(((acc, { quantity }) => acc + quantity), 0)), [userCart]);
+  useEffect(() => {
+    setTotalProductsCart(Number(userCart.reduce((acc, { quantity }) => acc + quantity, 0)));
+  }, [userCart]);
 
   // Criar uma função para lidar com a adição de produtos. Pode ser um hook personalizado em
   // Essa função atualiza o carrinho de compras
