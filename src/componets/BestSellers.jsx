@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import UserContext from '../context/UserContext';
+import '../style/bestSellers.css';
 
   function BestSellers() {
     const { productsApi, setProductsCart } = useContext(UserContext);
@@ -24,7 +25,7 @@ import UserContext from '../context/UserContext';
       )
     }
   return (
-    <section>
+    <section className="section-BestSellers">
       <hr/>
       <h3>Mais vendidos</h3>
       {cardItemCreator(productsApi)}
