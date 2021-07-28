@@ -1,14 +1,14 @@
 import React from 'react';
 import HeroHomePage from '../componets/HeroHomePage';
 import BestSellers from '../componets/BestSellers';
-import UserProvider from './context/UserProvider';
+import UserProvider from '../context/UserProvider';
 
 function HomePage() {
   // Criar função para header
   // Arrumar logo tirando 1 h do src
   return (
-    <UserProvider>
-      <main>
+    <main>
+        <UserProvider>
         <header>
           <span>corebiz R</span>
           <input type="text" placeholder="O que está procurando?"/>
@@ -18,8 +18,8 @@ function HomePage() {
         <HeroHomePage/>
         <h1>Home page</h1>
         <BestSellers/>
-      </main>
     </UserProvider>
+      </main>
 
   );
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
-import UserContext from './UsersContext';
+import PropTypes from 'prop-types';
+import UserContext from './UserContext';
 import getCorebizProducts from '../services/requestCorebizApi';
 
 function UserProvider({ children }) {
@@ -25,8 +25,8 @@ function UserProvider({ children }) {
   );
 }
 
-// PlanetsProvider.propTypes = {
-//   children: PropTypes.node.isRequired,
-// };
+UserProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default UserProvider;
