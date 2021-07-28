@@ -16,7 +16,6 @@ function HomePage() {
           <input type="button" name="Será um link para o carrinho" value="carrinho - adicionar link" />
         </header>
         <HeroHomePage/>
-        <h1>Home page</h1>
         <BestSellers/>
     </UserProvider>
       </main>
