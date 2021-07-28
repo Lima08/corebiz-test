@@ -13,7 +13,13 @@ function HomePage() {
           <span>corebiz R</span>
           <input type="text" placeholder="O que está procurando?"/>
           <input type="button" name="Será um link para minha conta" value="Minha conta" />
-          <input type="button" name="Será um link para o carrinho" value="carrinho - adicionar link" />
+          <input
+            type="button"
+            name="Será um link para o carrinho"
+            value="carrinho - adicionar link"
+            // onClick={}
+          />
+          <span> qtd carrinho{}</span>
         </header>
         <HeroHomePage/>
         <BestSellers/>

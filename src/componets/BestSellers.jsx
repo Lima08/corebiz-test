@@ -13,7 +13,11 @@ import UserContext from '../context/UserContext';
               <p>{`${stars} estrelas`}</p>
               <p>{`Valor: R$${price}`}</p>
               <p>Valor parcelado - fazer calculo simulado</p>
-              <input type="button" value="Comprar"/>
+              <input
+                type="button"
+                value="Comprar"
+                // onClick={ }
+              />
             </div>
           </div>
         )) 
