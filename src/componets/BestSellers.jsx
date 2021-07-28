@@ -1,10 +1,11 @@
+import React, { useContext } from 'react';
+import UserContext from '../context/UserContext';
 
-
-
-function BestSellers() {
-
+  function BestSellers() {
+    const { productsApi } = useContext(UserContext);
   function cardItem() {
     // Fazer um map aqqui com o retorno da API
+    console.log(productsApi)
     return (
       <div>
         <img alt="Foto do produto" src="Colocar retorno da API" />

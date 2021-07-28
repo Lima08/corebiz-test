@@ -1,3 +1,5 @@
+import React from 'react';
+
 
 function HeroHomePage() {
   // Criar função para header

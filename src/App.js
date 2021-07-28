@@ -13,7 +13,7 @@ function App() {
         <Route path="/cart" component={ Cart } />
         <Route path="*" component={ NotFoundPage } />
       </Switch>
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
