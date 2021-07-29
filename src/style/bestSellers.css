@@ -37,6 +37,9 @@
 
 .Title-bestSellers {
   margin-left: 25%;
+  font-family:'Times New Roman', Times, serif;
+  color: #1d1c1c;
+  font-weight: bolder;
 }
 
 .off-bestSellers {
@@ -87,5 +90,4 @@
 
 .next-previous {
   font-weight: bolder;
-
 }

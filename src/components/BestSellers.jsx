@@ -6,12 +6,20 @@ import 'react-rater/lib/react-rater.css'
 
 
   function BestSellers() {
-    // const [indexLimit, setIndexLimit] = useState(3);
     const [indexToNotRender, setIndexToNotRender] = useState(4);
-    const [onMouse, SetOnMouse] = useState(true);
+    const [onMouse, setOnMouse] = useState(true);
+    // const [disable, setDisable] = useState(true);
     const { productsApi, setProductsCart } = useContext(UserContext);
-    // para as avaliaçõe em estrelas fazer um icone e renderiza-lo de acorod com a quantidade. Google foonts ou bootstrap
+    // const patterns = {
+    //   name: /^??$/,
+    //   email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+    // };
     
+    // function validate() {
+    //   const { email, name } = this.state;
+    //   return patterns.email.test(email) && patterns.password.test(password);
+    // }
+  
     function handleRenderBestSellers(operation) {
       if (operation === '>') {
         (indexToNotRender === 4) ? setIndexToNotRender(0) : setIndexToNotRender(indexToNotRender + 1);
@@ -22,14 +30,13 @@ import 'react-rater/lib/react-rater.css'
     }
 
     function cardItemCreator(productsApi) {
-      // Faço um arrei com todos os item a serem renderizados.
       const cartList = productsApi.map((product, index) => (
         (index === indexToNotRender) ? null : (
         <div
           className="item-BestSellers container-fluid"
           key={product.productId}
-          onMouseEnter={() => SetOnMouse(true)}
-          onMouseLeave={() => SetOnMouse(false)}
+          onMouseEnter={() => setOnMouse(true)}
+          onMouseLeave={() => setOnMouse(false)}
         >
           {(product.listPrice > product.price) ? <p className="off-bestSellers p-3 mb-2 bg-danger text-white">OFF</p> : null}
           <img alt={`foto ${product.productName}`} src={product.imageUrl} />
@@ -78,10 +85,8 @@ import 'react-rater/lib/react-rater.css'
     }
   return (
     <section className="section-BestSellers">
-      <hr/>
       <h3 className="Title-bestSellers">Mais vendidos</h3>
       {cardItemCreator(productsApi)}
-      <hr/>
       </section>
   );
 }
