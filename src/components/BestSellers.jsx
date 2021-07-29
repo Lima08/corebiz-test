@@ -21,18 +21,26 @@ import '../style/bestSellers.css';
     function cardItemCreator(productsApi) {
       // Faço um arrei com todos os item a serem renderizados.
       const cartList = productsApi.map((product, index) => (
-        (index === indexToNotRender) ? null : ( <div
+        (index === indexToNotRender) ? null : (
+        <div
           className="item-BestSellers container-fluid"
           key={product.productId}
           onMouseEnter={() => SetOnMouse(true)}
           onMouseLeave={() => SetOnMouse(false)}
         >
           <img alt={`foto ${product.productName}`} src={product.imageUrl} />
+
           <div className={onMouse ? 'infos-item' : null}>
             <p className="product-name">{product.productName}</p>
             <p>{`${product.stars} estrelas`}</p>
-            <p>{`Valor: R$${Number(product.price)}`}</p>
-            <p>Valor parcelado - fazer calculo simulado</p>
+            <p className="value">{`por R$ ${Number(product.price / 100).toFixed(2)}`}</p>
+
+            { (product.installments.length > 0) ? (
+              <p className="installments">
+                {`ou em ${product.installments[0].quantity}x de R$ ${Number(product.installments[0].value / 100).toFixed(2)}`}
+              </p>
+            ) : null }
+
             { onMouse ? (<input
               type="button"
               value="Comprar"
