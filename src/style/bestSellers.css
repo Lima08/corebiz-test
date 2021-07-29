@@ -36,14 +36,14 @@
 }
 
 .Title-bestSellers {
-  margin-left: 25%;;
+  margin-left: 25%;
 }
 
-/* .off-bestSellers {
+.off-bestSellers {
   width: 5vh;
   height: 5vh;
-  Continuar trabalhando na imagem utilizando border para desenhar e depois posicionar na foco com float ou absolut
-} */
+  /* Continuar trabalhando na imagem utilizando border para desenhar e depois posicionar na foco com float ou absolut */
+}
 
 .value {
   font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
@@ -83,4 +83,9 @@
 
 .buy-btn{
   margin: 10px;
+}
+
+.next-previous {
+  font-weight: bolder;
+
 }

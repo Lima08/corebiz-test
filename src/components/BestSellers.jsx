@@ -63,14 +63,14 @@ import 'react-rater/lib/react-rater.css'
       return (
         <div className="list-BestSellers">
           <input
+            className="carousel-control-prev-icon btn btn-dark"
             type="button"
-            value="<"
             onClick={({target: { value }}) => handleRenderBestSellers(value) }
           />
           {cartList} 
           <input
+            className="carousel-control-next-icon btn btn-dark"
             type="button"
-            value=">"
             onClick={({target: { value }}) => handleRenderBestSellers(value) }
           />
         </div>
