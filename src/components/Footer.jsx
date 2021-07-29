@@ -1,15 +1,16 @@
 // import React, { useContext, useState } from 'react';
 // import UserContext from '../context/UserContext';
-// import '../style/bestSellers.css';
+import '../style/footer.css';
 
 function Footer() {
   return (
-    <footer>
-      <div>
-        <h4>Localização</h4>
-        <p>Endereço</p>
-        <p>Email da empresa</p>
-        <p>Telefone</p>
+    <footer className="footer">
+      <div >
+        <h4 className="infos-header">Localização</h4>
+        <p className="contact-infos">Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+        <p className="contact-infos">Alphavile SP</p>
+        <p className="contact-infos">brasil@corebiz.ag</p>
+        <p className="contact-infos"> +55 11 3090 1039</p>
       </div>
       <div>
         <input tibe="button" value="Entrar em contato" />
