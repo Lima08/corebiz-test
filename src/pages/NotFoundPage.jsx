@@ -1,0 +1,1 @@
+// pagina para redirecionar para tela principal em caso de url errada

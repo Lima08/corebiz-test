@@ -1,9 +1,10 @@
 import React from 'react';
-import HeroHomePage from '../componets/HeroHomePage';
-import BestSellers from '../componets/BestSellers';
+import HeroHomePage from '../components/HeroHomePage';
+import BestSellers from '../components/BestSellers';
 import UserProvider from '../context/UserProvider';
-import HeaderHome from '../componets/HeaderHome';
-import Footer from '../componets/Footer';
+import HeaderHome from '../components/HeaderHome';
+import Footer from '../components/Footer';
+import PromotionForm from '../components/PromotionForm';
 
 function HomePage() {
   // Criar função para header
@@ -14,6 +15,7 @@ function HomePage() {
       <HeaderHome/>
       <HeroHomePage/>
       <BestSellers/>
+      <PromotionForm/>
       <Footer/>
     </UserProvider>
 
