@@ -39,6 +39,12 @@
   margin-left: 25%;;
 }
 
+/* .off-bestSellers {
+  width: 5vh;
+  height: 5vh;
+  Continuar trabalhando na imagem utilizando border para desenhar e depois posicionar na foco com float ou absolut
+} */
+
 .value {
   font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;

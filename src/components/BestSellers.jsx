@@ -31,11 +31,12 @@ import 'react-rater/lib/react-rater.css'
           onMouseEnter={() => SetOnMouse(true)}
           onMouseLeave={() => SetOnMouse(false)}
         >
+          {(product.listPrice > product.price) ? <p className="off-bestSellers p-3 mb-2 bg-danger text-white">OFF</p> : null}
           <img alt={`foto ${product.productName}`} src={product.imageUrl} />
 
           <div className={onMouse ? 'infos-item' : null}>
             <p className="product-name">{product.productName}</p>
-            <Rater rating={Number(product.stars)} total={5} interactive={false} />
+            <Rater rating={Number(product.stars)} total={5} interactive={false} /> 
 
             { (product.listPrice !== null) ? (
               <p className="listPrice">
