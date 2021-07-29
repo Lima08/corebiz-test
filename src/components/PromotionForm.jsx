@@ -1,6 +1,4 @@
-// import React, { useContext, useState } from 'react';
-// import UserContext from '../context/UserContext';
-// import '../style/bestSellers.css';
+
 import React from "react";
 
 function PromotionForm() {
