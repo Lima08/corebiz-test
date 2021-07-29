@@ -32,6 +32,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #7A7A7A;
+  margin: 0;
 }
 
 .Title-bestSellers {
@@ -71,7 +72,7 @@
   color: #9b9b9b;
   text-align: center;
   font-weight: bolder;text-decoration: line-through solid #9b9b9b;
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 .buy-btn{
