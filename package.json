@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "react-rater": "^6.0.0",
     "react-router-dom": "^5.2.0"
   }
 }

@@ -1,7 +1,9 @@
 import React, { useContext, useState } from 'react';
 import UserContext from '../context/UserContext';
-import Rater from 'react-rater';
 import '../style/bestSellers.css';
+import Rater from 'react-rater'
+import 'react-rater/lib/react-rater.css'
+
 
   function BestSellers() {
     // const [indexLimit, setIndexLimit] = useState(3);
@@ -33,8 +35,7 @@ import '../style/bestSellers.css';
 
           <div className={onMouse ? 'infos-item' : null}>
             <p className="product-name">{product.productName}</p>
-            <p>{`${product.stars} estrelas`}</p>
-            <Rater rating={2} total={5} interactive={false} />
+            <Rater rating={Number(product.stars)} total={5} interactive={false} />
 
             { (product.listPrice !== null) ? (
               <p className="listPrice">
