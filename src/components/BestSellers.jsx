@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import UserContext from '../context/UserContext';
+import Rater from 'react-rater';
 import '../style/bestSellers.css';
 
   function BestSellers() {
@@ -33,6 +34,13 @@ import '../style/bestSellers.css';
           <div className={onMouse ? 'infos-item' : null}>
             <p className="product-name">{product.productName}</p>
             <p>{`${product.stars} estrelas`}</p>
+            <Rater rating={2} total={5} interactive={false} />
+
+            { (product.listPrice !== null) ? (
+              <p className="listPrice">
+                {`de R$ ${Number(product.listPrice / 100).toFixed(2)}`}
+              </p>
+            ) : null }
             <p className="value">{`por R$ ${Number(product.price / 100).toFixed(2)}`}</p>
 
             { (product.installments.length > 0) ? (
@@ -44,7 +52,7 @@ import '../style/bestSellers.css';
             { onMouse ? (<input
               type="button"
               value="Comprar"
-              className="btn-sucess"
+              className="btn btn-dark buy-btn"
               onClick={ () => setProductsCart(product) }
             />) : null }
           </div>
