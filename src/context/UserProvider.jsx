@@ -22,6 +22,12 @@ function UserProvider({ children }) {
   // function atualizeTotalProducts() {
   //   setTotalProductsCart(userCart.reduce(((acc, { quantity }) => acc + quantity), 0));
   // } APAGAR?
+  useEffect(() => {
+    if (localStorage.getItem('userCart')) {
+      const userCartSaved = JSON.parse(localStorage.getItem('userCart'));
+      handlePurchaseUserCart(userCartSaved)
+    }
+  }, []);
 
   useEffect(() => {
     setTotalProductsCart(Number(userCart.reduce((acc, { quantity }) => acc + quantity, 0)));
