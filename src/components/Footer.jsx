@@ -24,9 +24,16 @@ function Footer() {
           value="Fale com o nosso consultor online"
         />
       </div>
-      <div>
-        <img alt="Logo corebiz" />
-        <img alt="Logo Vtex" />
+      <div className="logos">
+        <div className="logo">
+          <p className="contact-infos by">created by</p>
+          <img alt="Logo corebiz" src="https://www.corebiz.ag/wp-content/uploads/2020/06/logo-corebiz-global.svg"/>
+        </div>
+        <div className="logo">
+        <p className="contact-infos by">Powered by</p>
+          <img alt="Logo Vtex" src="https://vtex.com/wp-content/themes/VTEXTheme/assets/imgs/base/logo-vtex.svg"/>
+
+        </div>
       </div>
     </footer>
   );
