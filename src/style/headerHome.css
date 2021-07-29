@@ -21,13 +21,14 @@
   width: 40%;
   height: 4vh;
   padding: 12px 20px;
-  margin: 2vh ;
+  margin: 0 6vh ;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.navBtns-homePage {
-  /* margin-left: 5%; */
+.navBtns {
+  color: gray;
+  font-family: Nunito;
 }

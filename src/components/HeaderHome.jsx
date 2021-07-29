@@ -10,20 +10,20 @@ function HeaderHome() {
     <header className="header-homePage">
       <p className="Logo-corebiz">corebiz<span className="ponto-corebiz">.</span></p>
       <input className="search-homePage" type="text" placeholder="O que está procurando?"/>
-      <nav className="navBtns-homePage">
+      <nav>
         <Link to="/myAcount">
           <input
             type="button"
             value="Minha conta"
-            className="btn btn-secundary"
+            className="navBtns btn btn-secundary"
           />
         </Link>
         <Link to="/cart">
           <button
             type="button"
-            className="btn btn-secundary position-relative"
+            className="navBtns btn btn-secundary position-relative"
           >
-            Meu carrinho
+            Carrinho
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               {totalProductsCart}
             </span>
