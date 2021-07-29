@@ -1,1 +1,19 @@
-// Quais componentes posso reutilizar? Fazer um componente de products e reutilizar aqui? Usar as funções do contexto e o state para montar o cart. 
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Cart() {
+  return (
+    <div >
+      <Link to="/">
+        <input
+          type="button"
+          value="Voltar"
+          className="btn btn-outline-secondary"
+        />
+      </Link>
+      <h1>Meu carrinho</h1>
+    </div>
+  );
+}
+
+export default Cart;

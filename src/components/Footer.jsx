@@ -12,9 +12,17 @@ function Footer() {
         <p className="contact-infos">brasil@corebiz.ag</p>
         <p className="contact-infos"> +55 11 3090 1039</p>
       </div>
-      <div>
-        <input tibe="button" value="Entrar em contato" />
-        <input tibe="button" value="Fale com o nosso consultor online" />
+      <div className="contact-btns">
+        <input
+          className="footer-btn btn btn-light"
+          type="button"
+          value="Entrar em contato"
+        />
+        <input
+          className="footer-btn btn btn-light"
+          type="button"
+          value="Fale com o nosso consultor online"
+        />
       </div>
       <div>
         <img alt="Logo corebiz" />
