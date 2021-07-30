@@ -41,8 +41,10 @@ Nesse projeto busquei demostrar minhas habilidades com:
 
 Desenvolver uma página baseando-se no layout e APIs abaixo.
 
-**Link do layout:** https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge
-**Link das APIs:** https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
+**Link do layout:** 
+https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge
+**Link das APIs:** 
+https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
 ### Passo 1
 -  Use a API de produtos para pegar os dados dos produtos e construir a vitrine.
@@ -100,6 +102,7 @@ Desenvolver uma página baseando-se no layout e APIs abaixo.
   - Página de detalhes do priduto
   - Tela de configurações
   - Configurar a pagina `NotFound`
+  - Configurar tela mobile que infelizmente não tive tempo de fazer. 😟
 
 ---
 
@@ -109,5 +112,6 @@ Desenvolver uma página baseando-se no layout e APIs abaixo.
 
 
   **Agir, eis a inteligência verdadeira. Serei o que quiser. Mas tenho que querer o que for. O êxito está em ter êxito, e não em ter condições de êxito. Condições de palácio tem qualquer terra larga, mas onde estará o palácio se não o fizerem ali?**
+
 _Fernando Pessoa SOARES, B. Livro do Desassossego. Vol.II. Lisboa: Ática. 1982. 85p._ 
 
