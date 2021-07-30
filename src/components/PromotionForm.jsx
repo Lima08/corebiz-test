@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import sendCorebizProducts from '../services/postCorebizAPI';
 import '../style/promotionForm.css';
 
 function PromotionForm() {
   const [disabled, setDisabled] = useState(true);
-  const [email, setEmail] = useState('');
+  const [userEmail, setEmail] = useState('');
   const [userName, setName] = useState('');
 
   function handleChangeInput({ name, value }) {
@@ -17,17 +18,29 @@ function PromotionForm() {
     }
 
     if (name === "name") {
-      setDisabled(!(patterns.emailRegex.test(email) && patterns.nameRegex.test(value)));
+      setDisabled(!(patterns.emailRegex.test(userEmail) && patterns.nameRegex.test(value)));
 
       setName(value)
     }
   }
 
-  function submitForm() {
-    // console.log(patterns.nameRegex.test(name))
-    // console.log(name)
-    // console.log(patterns.emailRegex.test(email))
-    // console.log(email)
+  const submitForm = () => {
+    // const infosToSend = JSON.stringify({
+    //   "email": userEmail,
+    //   "name": userName,
+    // });
+    var raw = {
+      "email": userEmail,
+      "name": userName
+    };
+
+    let requestOptions = {
+      method: 'POST',
+      body: raw,
+      redirect: 'follow'
+    };
+
+    sendCorebizProducts(requestOptions);
   }
 
   return (
