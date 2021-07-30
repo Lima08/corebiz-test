@@ -13,13 +13,11 @@ function PromotionForm() {
     };
     if (name === "email") {
       setDisabled(!(patterns.emailRegex.test(value) && patterns.nameRegex.test(userName)));
-      console.log('rodou if handle email')
       setEmail(value)
     }
 
     if (name === "name") {
       setDisabled(!(patterns.emailRegex.test(email) && patterns.nameRegex.test(value)));
-      console.log('rodou if handle name')
 
       setName(value)
     }
@@ -31,8 +29,6 @@ function PromotionForm() {
     // console.log(patterns.emailRegex.test(email))
     // console.log(email)
   }
-
-  // useEffect(() => setDisabled(validate()), [disabled]);
 
   return (
     <section className="promotion-section">

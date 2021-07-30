@@ -1,0 +1,30 @@
+.promotion-section {
+  background-color: #eeeeee;
+  margin: 0 auto;
+}
+
+.promotion-title {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2%;
+  color: #333333;
+  text-align: center;
+}
+
+.promotion-form {
+  display: flex;
+  justify-content: center;
+}
+
+.promotion-input {
+  margin: 0.5vh;
+  margin-bottom: 2vh;
+  border-radius: 3px;
+  border: 0;
+  font-size: 12px;
+  padding: 1.2vh;
+}
+
+.promotion-btnt {
+  margin: 1px;
+  margin-bottom: 2vh;
+}
