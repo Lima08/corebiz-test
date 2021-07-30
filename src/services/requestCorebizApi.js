@@ -3,12 +3,13 @@ const requestOptions = {
   redirect: 'follow'
 };
 
-// Fazer tratativa try cath
-const getCorebizProducts = async () => {
+const getCorebizProducts = () => {
   const URL = 'https://corebiz-test.herokuapp.com/api/v1/products';
-  const products = await fetch(URL, requestOptions);
-  const response = products.json();
-  return response;
+  return fetch(URL, requestOptions)
+    .then(products => products.json())
+    .then(response => response)
+    .then(response => response)
+    .catch(error =>  console.log('error na postagem:', error));
 }
 
 export default getCorebizProducts;

@@ -25,7 +25,7 @@ function Footer() {
       <div className="logos">
         <div className="logo">
           <p className="contact-infos by">created by</p>
-          <img alt="Logo corebiz" src="https://www.corebiz.ag/wp-content/uploads/2020/06/logo-corebiz-global.svg"/>
+          <img alt="Imagem logo Corebiz" src="https://www.corebiz.ag/wp-content/uploads/2020/06/logo-corebiz-global.svg"/>
         </div>
         <div className="logo">
         <p className="contact-infos by">Powered by</p>
