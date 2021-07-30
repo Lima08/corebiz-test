@@ -1,0 +1,59 @@
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  color: #FFFFFF;
+  ;
+}
+
+h4 {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.contact-infos {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px;
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.footer-btn {
+  font-family: Nunito;
+  margin: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  width: 195px;
+  height: 38px;
+}
+
+.by {
+  margin: 0px;
+}
+
+.logos{
+  display: flex;
+}
+
+.logo {
+  margin: auto 2vh;
+}

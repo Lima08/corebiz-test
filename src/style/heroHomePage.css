@@ -1,0 +1,19 @@
+.heroHomePage {
+  background-image: linear-gradient(to right, black,  rgba(0, 0, 0, 0.993),  rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.39)), url("https://source.unsplash.com/1600x900/?computer");
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-texts {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  color: white;
+}

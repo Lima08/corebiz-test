@@ -1,0 +1,83 @@
+.list-BestSellers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infos-item {
+  background-color: #E6E8EA;
+}
+
+.item-BestSellers {
+  margin: 15px;
+  display:inline-block;
+  width: 216px;
+  height: auto;
+  text-align: center;
+}
+
+.product-name {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7A7A7A;
+  margin: 0;
+}
+
+.Title-bestSellers {
+  margin-left: 25%;
+  font-family:'Times New Roman', Times, serif;
+  color: #1d1c1c;
+  font-weight: bolder;
+}
+
+.off-bestSellers {
+  margin: 2vh 0;
+  font-weight: bolder;
+}
+
+.value {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin: 0;
+  text-align: center;
+}
+
+.installments {
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #9b9b9b;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 0 10px;
+}
+
+.listPrice{
+  font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #9b9b9b;
+  text-align: center;
+  font-weight: bolder;text-decoration: line-through solid #9b9b9b;
+  margin: 0;
+}
+
+.buy-btn{
+  margin: 10px;
+}
+
+.next-previous {
+  color: transparent;
+}

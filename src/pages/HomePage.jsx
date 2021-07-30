@@ -1,17 +1,21 @@
+import React from 'react';
+import HeroHomePage from '../components/HeroHomePage';
+import BestSellers from '../components/BestSellers';
+import UserProvider from '../context/UserProvider';
+import HeaderHome from '../components/HeaderHome';
+import Footer from '../components/Footer';
+import PromotionForm from '../components/PromotionForm';
 
 function HomePage() {
-  // Criar função para header
   return (
-    <main>
-      <header>
-        <h2>Corebiz</h2>
-        <input type="text" placeholder="O que está procurando?"/>
-        <input tibe="button" value="Minha conta" />
-        <input tibe="button" value="carrinho" />
-      </header>
+    <UserProvider>
+      <HeaderHome/>
       <HeroHomePage/>
-      <h1>Home page</h1>
-    </main>
+      <BestSellers/>
+      <PromotionForm/>
+      <Footer/>
+    </UserProvider>
+
   );
 }
 

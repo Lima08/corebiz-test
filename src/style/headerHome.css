@@ -1,0 +1,33 @@
+.header-homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo-corebiz {
+  color:black;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.ponto-corebiz {
+  color:rgb(170, 168, 168);
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.search-homePage {
+  width: 40%;
+  height: 4vh;
+  padding: 12px 20px;
+  margin: 0 6vh ;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.navBtns {
+  color: gray;
+  font-family: Nunito;
+}
