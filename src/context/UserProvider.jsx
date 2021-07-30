@@ -16,12 +16,6 @@ function UserProvider({ children }) {
     setProductsContext();
   }, []);
 
-  // useEffect(() => {
-  //   return localStorage.setItem('userCart', JSON.stringify(userCart));
-  // }, [totalProductsCart]);
-  // function atualizeTotalProducts() {
-  //   setTotalProductsCart(userCart.reduce(((acc, { quantity }) => acc + quantity), 0));
-  // } APAGAR?
   useEffect(() => {
     if (localStorage.getItem('userCart')) {
       const userCartSaved = JSON.parse(localStorage.getItem('userCart'));
@@ -33,8 +27,6 @@ function UserProvider({ children }) {
     setTotalProductsCart(Number(userCart.reduce((acc, { quantity }) => acc + quantity, 0)));
   }, [userCart]);
 
-  // Criar uma função para lidar com a adição de produtos. Pode ser um hook personalizado em
-  // Essa função atualiza o carrinho de compras
   function setProductsCart(newProduct) {
     if (userCart.length === 0) {
       const newCart = {...newProduct, quantity: 1}
@@ -52,13 +44,8 @@ function UserProvider({ children }) {
     }
     handlePurchaseUserCart([...userCart, {...newProduct, quantity: 1}]);
     localStorage.setItem('userCart', JSON.stringify([...userCart, {...newProduct, quantity: 1}]))
-
-
-    // const {productName, imageUrl, stars, price, productId} = newProduct;
-    // Montar um novo objeto produtos com quantity
   }
 
-  // Pensar no formato do contexto. Como vou acessar nas outras paginas o cart? Quais funções vou utilizar? Quais paginas Home, login? 
   const context = {
     productsApi,
     userCart,
@@ -73,7 +60,6 @@ function UserProvider({ children }) {
     </UserContext.Provider>
   );
 }
- // Criar função para a pagina carrinho. Função de adc item, remover um, remover todos e limpar carrinho. Função valor total compra.
 UserProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };

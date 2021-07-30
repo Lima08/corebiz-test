@@ -6,7 +6,6 @@ import UserAcount from './pages/UserAcount';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
-  // colocar a navegação aqui
   return (
     <BrowserRouter>
       <Switch>

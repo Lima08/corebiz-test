@@ -7,9 +7,6 @@ import Footer from '../components/Footer';
 import PromotionForm from '../components/PromotionForm';
 
 function HomePage() {
-  // Criar função para header
-  // Arrumar logo tirando 1 h do src
-  // Span qtd será um link
   return (
     <UserProvider>
       <HeaderHome/>
