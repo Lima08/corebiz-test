@@ -34,8 +34,8 @@
 }
 
 .off-bestSellers {
-  width: 5vh;
-  height: 5vh;
+  margin: 2vh 0;
+  font-weight: bolder;
 }
 
 .value {
