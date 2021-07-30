@@ -1,12 +1,12 @@
 ### Boas vindas ao projeto!
 
 Projeto realizado como teste de conhecimento para a vaga de desenvolvedor na empresa Corebiz.
-Esse projeto é fruto de muitas horas de estudo e dedicação e foi feito com muito carinho. Qualquer dúvida ou sugestão sinta-se á vontade para me passa seu feedback.😇
+Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com muito carinho. Qualquer dúvida ou sugestão sinta-se á vontade para me passa seu feedback.😇
 
 ---
 
 # Sumário
-
+<!-- Finalizar -->
 - [Habilidades](#habilidades)
 
 - [Avisos finais](#avisos-finais)
@@ -35,17 +35,20 @@ Nesse projeto busquei demostrar minhas habilidades com:
 ##  A missão
 
 Desenvolver uma página baseando-se no layout e APIs abaixo.
-Link do layout: https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge
-Link das APIs: https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
+
+**Link do layout:** https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge
+**Link das APIs:** https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
 ### Passo 1
-● Use a API de produtos para pegar os dados dos produtos e construir a vitrine.
-● Ao clicar no botão “Comprar” deve ser incrementada a quantidade de itens no carrinho.
-● Ao atualizar a página, a quantidade de produtos no carrinho deve serpreservada.
+-  Use a API de produtos para pegar os dados dos produtos e construir a vitrine.
+-  Ao clicar no botão “Comprar” deve ser incrementada a quantidade de itens no carrinho.
+-  Ao atualizar a página, a quantidade de produtos no carrinho deve serpreservada.
 
 ### Passo 2
-● Crie validações para o form de contato. (Ex: se o e-mail for inválido ou o nome vazio)
-● Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a API de newsletter seguindo as especificações da API.
+-  Crie validações para o form de contato. (Ex: se o e-mail for inválido ou o nome vazio)
+-  Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a API de newsletter seguindo as especificações da API.
+
+---
 
 ## Data de entrega
 
@@ -53,18 +56,52 @@ Link das APIs: https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=l
 
 ---
 
-  **Observações técnicas**
+  ## Observações técnicas
 
- 
+ - O projeto foi iniciado com `npx create-react-app`
+ - Utilizei o `npm` para regenciar os pacotes
+ - Para instalar as dependências basta utilizar o comando `npm i`
+ - Utilize o comando `npm start` para visualizar o projeto no navegador pela portar 3000.
 
-<!-- #### 6. Desenvolva o jogo onde só deve ser possível escolher uma resposta correta por pergunta
+---
 
-  **PRIORIDADE 2** - A pergunta deve ter apenas uma alternativa correta
+  ## Escolha das tecnologias
+   
+  Informo que a utilização de Context API, navegação com React-Router-DOM e o uso do framework Bootstrap foi apenas para demonstrar conhecimento e não por necessidade de fato. Como a aplicação é pequena poderia ter desenvolvido sem a utilização desses recursos, porem dai perde a graça, não é mesmo? 😆
 
-  **Observações técnicas**
+  ---
 
-  * Apenas uma alternativa deve ser a correta
+  ## Tempo de desenvolvimento
 
-  **O que será avaliado**
+  Informo que utilizei 16 horas entre os dias 27/jul/2021 à 29/jul/2021 para pesquisa e desenvolvimento desse projeto.
+  
+---
 
-  * A quantidade de respostas corretas deve ser 1 -->
+  ## Organização
+
+  Para me organizar utilizei um board  [Trello](https://trello.com/) e criem requisitos para deixar em back-log e facilitar meu desenvolvimento.
+  Como o projeto é pequeno utilizei apenas uma `branch` para todo o desenvolvimento e separei os requisitos em `commits` bem comentados.
+
+---
+
+  ## Próximos passos (E se eu fosse continuar...)
+
+  Um projeto bacana assim me abre a imaginação para melhorias. Sendo assim segue alguns pontos possíveis para a continuação do projeto:
+
+  - Adicionar uma página de carrinho
+  - Adicionar total compra e finalização de pagamento
+  - Nova consulta a API para coletar mais produtos para venda
+  - Tela de login
+  - Página de detalhes do priduto
+  - Tela de configurações
+  - Configurar a pagina `NotFound`
+
+---
+
+  ## Agradecimentos
+
+   Gostaria de agradecer a oportunidade de participar do processo seletivo do time Corebiz. É uma honra e previlégio ter a chance de entrar como desenvolvedor para contribuir com a equipe e evoluir como profissional. Fico no aguardo e na expectativa. 🎯👨‍💻
+
+  **Agir, eis a inteligência verdadeira. Serei o que quiser. Mas tenho que querer o que for. O êxito está em ter êxito, e não em ter condições de êxito. Condições de palácio tem qualquer terra larga, mas onde estará o palácio se não o fizerem ali?**
+_Fernando Pessoa SOARES, B. Livro do Desassossego. Vol.II. Lisboa: Ática. 1982. 85p._ 
+
