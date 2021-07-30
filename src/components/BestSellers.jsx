@@ -8,18 +8,8 @@ import 'react-rater/lib/react-rater.css'
   function BestSellers() {
     const [indexToNotRender, setIndexToNotRender] = useState(4);
     const [onMouse, setOnMouse] = useState(true);
-    // const [disable, setDisable] = useState(true);
     const { productsApi, setProductsCart } = useContext(UserContext);
-    // const patterns = {
-    //   name: /^??$/,
-    //   email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
-    // };
     
-    // function validate() {
-    //   const { email, name } = this.state;
-    //   return patterns.email.test(email) && patterns.password.test(password);
-    // }
-  
     function handleRenderBestSellers(operation) {
       if (operation === '>') {
         (indexToNotRender === 4) ? setIndexToNotRender(0) : setIndexToNotRender(indexToNotRender + 1);
@@ -58,12 +48,12 @@ import 'react-rater/lib/react-rater.css'
               </p>
             ) : null }
 
-            { onMouse ? (<input
+            <input
               type="button"
               value="Comprar"
               className="btn btn-dark buy-btn"
               onClick={ () => setProductsCart(product) }
-            />) : null }
+            />
           </div>
         </div>)
       ))

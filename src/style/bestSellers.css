@@ -1,11 +1,5 @@
 .list-BestSellers {
   display: flex;
-  /* position: absolute;
-  width: 1248px;
-  height: 407px;
-  left: 336px;
-  top: 536px; */
-  /* width: 60%vh; */
   align-items: center;
   justify-content: center;
   
@@ -25,7 +19,6 @@
 }
 
 .product-name {
-  /* position: absolute; */
   font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
