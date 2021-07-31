@@ -75,7 +75,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
   # Escolha das tecnologias
    
-  Informo que a utilização de Context API, navegação com React-Router-DOM e bootstrap.. Como a aplicação é pequena poderia ter desenvolvido sem a utilização desses recursos, porem dai perde a graça, não é mesmo? 😆
+  Informo que a utilização de Context API, navegação com React-Router-DOM e bootstrap. Como a aplicação é pequena poderia ter desenvolvido sem a utilização desses recursos.
 
   ---
 
