@@ -1,16 +1,20 @@
 import React, { useContext } from 'react';
 import UserContext from '../context/UserContext';
-import '../style/headerHome.css'
+import '../style/headerHome.css';
 import { Link } from 'react-router-dom';
 
 function HeaderHome() {
   const { totalProductsCart } = useContext(UserContext);
 
   return (
-    <header className="header-homePage">
-      <p className="Logo-corebiz">corebiz<span className="ponto-corebiz">.</span></p>
-      <input className="search-homePage" type="text" placeholder="O que está procurando?"/>
-      <nav>
+    <div className="container">
+      <header className="row justify-content-around align-items-center">
+
+        <p className="col-md-3 order-me Logo-corebiz">corebiz<span className="ponto-corebiz">.</span></p>
+        
+        <input className="col-auto col-md-6 order-12 search-homePage" type="text" placeholder="O que está procurando?"/>
+        
+        <nav className="col-md-3">
         <Link to="/myAcount">
           <input
             type="button"
@@ -29,9 +33,9 @@ function HeaderHome() {
             </span>
           </button>
         </Link>
-      </nav>
-      <hr/>
-    </header>
+        </nav>
+      </header>
+    </div>
 
   );
 }
