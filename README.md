@@ -1,7 +1,7 @@
 # Boas vindas ao projeto Corebiz - (Teste Prático Dev Front-end)!
 
 Projeto realizado como teste de conhecimento para a vaga de desenvolvedor na empresa Corebiz.
-Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com muito carinho. Qualquer dúvida ou sugestão sinta-se á vontade para me passa seu feedback.😇
+Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com muito carinho. Qualquer dúvida ou sugestão sinta-se á vontade para me passar seu feedback.😇
 
 ---
 
@@ -51,6 +51,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 -  Ao clicar no botão “Comprar” deve ser incrementada a quantidade de itens no carrinho.
 -  Ao atualizar a página, a quantidade de produtos no carrinho deve serpreservada.
 
+
 ### Passo 2
 -  Crie validações para o form de contato. (Ex: se o e-mail for inválido ou o nome vazio)
 -  Ao clicar em enviar com os campos validados, o form precisa ser disparado via javascript para a API de newsletter seguindo as especificações da API.
@@ -59,16 +60,16 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
 # Entrega
 
-  -  dia 30/07(Sexta-feira), às 09h 
+  -  Dia 30/07(Sexta-feira) às 09h 
 
 ---
 
-  # Observações-tecnicas
+  # Observações técnicas
 
  - O projeto foi iniciado com `npx create-react-app`
- - Utilizei o `npm` para regenciar os pacotes
+ - Utilizei o `npm` para gerenciar os pacotes
  - Para instalar as dependências basta utilizar o comando `npm i`
- - Utilize o comando `npm start` para visualizar o projeto no navegador pela portar 3000.
+ - Utilize o comando `npm start` para visualizar o projeto no navegador pela porta 3000.
 
 ---
 
@@ -86,7 +87,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
   # Organização
 
-  Para me organizar utilizei um board  [Trello](https://trello.com/) e criem requisitos para deixar em back-log e facilitar meu desenvolvimento.
+  Para me organizar utilizei um board  [Trello](https://trello.com/) e criei requisitos para deixar em back-log e facilitar meu desenvolvimento.
   Como o projeto é pequeno utilizei apenas uma `branch` para todo o desenvolvimento e separei os requisitos em `commits` bem comentados.
 
 ---
@@ -99,7 +100,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
   - Adicionar total compra e finalização de pagamento
   - Nova consulta a API para coletar mais produtos para venda
   - Tela de login
-  - Página de detalhes do priduto
+  - Página de detalhes do produto
   - Tela de configurações
   - Configurar a pagina `NotFound`
   - Configurar tela mobile que infelizmente não tive tempo de fazer. 😟
