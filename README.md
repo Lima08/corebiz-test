@@ -75,7 +75,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
   # Escolha das tecnologias
    
-  Informo que a utilização de Context API, navegação com React-Router-DOM e o uso do framework Bootstrap foi apenas para demonstrar conhecimento e não por necessidade de fato. Como a aplicação é pequena poderia ter desenvolvido sem a utilização desses recursos, porem dai perde a graça, não é mesmo? 😆
+  Informo que a utilização de Context API, navegação com React-Router-DOM e bootstrap.. Como a aplicação é pequena poderia ter desenvolvido sem a utilização desses recursos, porem dai perde a graça, não é mesmo? 😆
 
   ---
 
@@ -94,7 +94,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
   ## Próximos passos (E se eu fosse continuar...)
 
-  Um projeto bacana assim me abre a imaginação para melhorias. Sendo assim segue alguns pontos possíveis para a continuação do projeto:
+ Segue alguns pontos possíveis para a continuação do projeto:
 
   - Adicionar uma página de carrinho
   - Adicionar total compra e finalização de pagamento
