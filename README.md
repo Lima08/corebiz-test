@@ -30,7 +30,7 @@ Nesse projeto busquei demostrar minhas habilidades com:
   - Navegação com React-Router-DOM
   - Uso do framework Bootstrap
   - Regex
-  - requisições assíncronas com `fetch`
+  - Requisições assíncronas com `fetch`
   - Hof's
   - Uso do localStorage
   - Git
