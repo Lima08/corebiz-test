@@ -14,7 +14,7 @@ Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com m
 - [Escolha das tecnologias](#Escolhadastecnologias)
 - [Tempo de desenvolvimento](#tempodedesenvolvimento)
 - [Organização](#organizacao)
-- [Se eu fosse continuar](#proximosPassos)
+- [Proximos passos](#proximosPassos)
 - [Agradecimentos](#agradecimentos)
 ---
 
@@ -92,7 +92,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
 ---
 
-  ## Próximos passos (E se eu fosse continuar...)
+  # Próximos passos
 
  Segue alguns pontos possíveis para a continuação do projeto:
 
@@ -107,7 +107,7 @@ https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
 ---
 
-  ## Agradecimentos
+  # Agradecimentos
 
    Gostaria de agradecer a oportunidade de participar do processo seletivo do time Corebiz. É uma honra e previlégio ter a chance de entrar como desenvolvedor para contribuir com a equipe e evoluir como profissional. Fico no aguardo e na expectativa. 🎯👨‍💻
 
