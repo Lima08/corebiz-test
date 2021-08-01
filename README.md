@@ -1,4 +1,4 @@
-# Boas vindas ao projeto Corebiz - (Teste Prático Dev Front-end)!
+# Boas vindas ao projeto Corebiz - Teste Prático Dev Front-end!
 
 Projeto realizado como teste de conhecimento para a vaga de desenvolvedor na empresa Corebiz.
 Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com muito carinho. Qualquer dúvida ou sugestão sinta-se á vontade para me passar seu feedback.😇
