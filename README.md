@@ -14,7 +14,7 @@ Esse trabalho é fruto de muitas horas de estudo e dedicação e foi feito com m
 - [Escolha das tecnologias](#Escolhadastecnologias)
 - [Tempo de desenvolvimento](#tempodedesenvolvimento)
 - [Organização](#organizacao)
-- [Próximos passos](#próximos)
+- [Próximos passos](#proximos)
 - [Agradecimentos](#agradecimentos)
 ---
 
